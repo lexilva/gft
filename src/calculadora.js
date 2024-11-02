@@ -1,13 +1,10 @@
-let win = 5
+let win = 150
 let lose = 8
-let victoryCalculator = getVictoryRank(win,lose)
-let rank = getRank(victoryCalculator)
-
+main()
 function getVictoryRank(win,lose){
     let result = win - lose
     return result
 }
-
 function getRank(win){
     let rank
     if(win < 11){
@@ -27,5 +24,8 @@ function getRank(win){
     }
     return rank
 }
-
-console.log(`O Herói tem saldo de ${victoryCalculator} está no nível de ${rank}`)
+function main(){
+    let victoryCalculator = getVictoryRank(win,lose)
+    let rank = getRank(victoryCalculator)
+    console.log(`O Herói tem saldo de ${victoryCalculator} está no nível de ${rank}`)
+}
