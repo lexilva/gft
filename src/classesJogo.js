@@ -24,5 +24,5 @@ class hero{
         return console.log(`o ${tipoDeHeroi} atacou usando ${this.ataque}`)
     }
 }
-let heroi = new hero("Alex",48,"monge")
+let heroi = new hero("Davi",25,"ninja")
 heroi.atacar(heroi.tipo)
